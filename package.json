@@ -1,0 +1,40 @@
+{
+  "name": "webpack-sass-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "start:teal": "export THEME=teal && webpack-dev-server",
+    "start:salmon": "export THEME=salmon && webpack-dev-server",
+    "watch:teal": "yarn clean && export THEME=teal && webpack --watch",
+    "watch:salmon": "yarn clean && export THEME=salmon && webpack --watch",
+    "build:teal": "yarn clean && export THEME=teal && webpack -p",
+    "build:salmon": "yarn clean && export THEME=salmon && webpack -p"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "path": "^0.12.7",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.1.3",
+    "css-loader": "^0.28.9",
+    "node-sass": "^4.7.2",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1"
+  }
+}
